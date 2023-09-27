@@ -1167,8 +1167,8 @@ class ShowL2vpnXconnect(ShowL2vpnXconnectSchema):
         # BL-PE-BG   G1-1-1-23-311
         p1_2 = re.compile(r'^(?P<group>\S+) +(?P<name>\S+)$')
         
-        # LU = Local Up, RU = Remote Up, CO = Connected
-        p1_3 = re.compile(r'^LU = Local Up, RU = Remote Up, CO = Connected$')
+        # LU = Local Up, RU = Remote Up, CO = Connected, (SI) = Seamless Inactive
+        p1_3 = re.compile(r'^LU = Local Up, RU = Remote Up, CO = Connected, \(SI\) = Seamless Inactive$')
 
         #               1000     DN   Gi0/0/0/5.1000    UP   10.4.1.206       1000   DN
         p2 = re.compile(r'^(?P<name>[a-zA-Z0-9]+) '
